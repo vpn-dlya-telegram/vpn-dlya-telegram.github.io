@@ -1,127 +1,127 @@
 :root {
-  /* 1. Цветовая палитра — Вайб Discord и Notion */
-  --primary: #8b5cf6;       /* Vibrant Violet */
-  --secondary: #1e293b;     
-  --accent: #ec4899;        /* TikTok Pink */
+  /* 1. Цветовая палитра — Тема: Telegram Cyberpunk (Темная) */
+  --primary: #229ED9;       /* Фирменный голубой Telegram, неоновый акцент */
+  --secondary: #818cf8;     /* Фиолетовый оттенок для контраста и глубины */
+  --accent: #f59e0b;        /* Теплый янтарный для кнопок действия и внимания */
   
-  /* 2. Фон и Текст — Чистый "Glass" интерфейс */
-  --bg-body: #f3f4f6;       
-  --bg-surface: #ffffff;    
-  --text-main: #0f172a;
-  --text-muted: #64748b;
+  /* 2. Фон и Текст */
+  --bg-body: #0f172a;       /* Глубокий темно-синий ("космический") фон */
+  --bg-surface: #1e293b;    /* Более светлый оттенок синего для карт и блоков */
+  --text-main: #f1f5f9;     /* Светло-серый, почти белый для основного текста */
+  --text-muted: #94a3b8;    /* Приглушенный серо-синий для второстепенного текста */
   
-  /* 3. Геометрия — Максимальные скругления Bento */
-  --border-width: 0px;      
-  --radius: 24px;           
-  --gap: 40px;              
+  /* 3. Геометрия (Современный, технологичный стиль) */
+  --border-width: 1px;      /* Тонкие, аккуратные рамки */
+  --radius: 8px;            /* Скругление для современного "софт-тек" вида */
+  --gap: 48px;              /* Чуть более компактная сетка */
   
   /* 4. Визуальные эффекты */
-  --grid-opacity: 0.03;
-  --noise-opacity: 0.02;
-  --blob-blur: 160px;       
+  --grid-opacity: 0.04;     /* Едва заметная фоновая сетка */
+  --noise-opacity: 0.02;     /* Легкий цифровой шум */
+  --blob-blur: 160px;       /* Сильное размытие для мягких неоновых свечений */
 
-  --header-h: 80px;
+  --header-h: 80px;         /* Чуть более высокий хедер */
 
-  /* Состояния и Акценты — Candy Style */
-  --clr-pros: #10b981;
-  --clr-pros-bg: #dcfce7;
-  --clr-pros-text: #064e3b;
+  /* Состояния и Акценты */
+  --clr-pros: #4ade80;       /* Яркий неоновый зеленый для плюсов */
+  --clr-pros-bg: #14532d;   /* Темно-зеленый фон для контраста */
+  --clr-pros-text: #b9f6ca; /* Очень светлый зеленый текст */
   
-  --clr-cons: #f43f5e; 
-  --clr-cons-bg: #ffe4e6;
-  --clr-cons-text: #9f1239;
+  --clr-cons: #f87171;       /* Яркий кораллово-красный для минусов */
+  --clr-cons-bg: #7f1d1d;   /* Темно-бордовый фон */
+  --clr-cons-text: #fecaca; /* Светло-розовый текст */
 
-  --clr-warn-bg: #fff7ed;
-  --clr-warn-border: #f59e0b;
+  --clr-warn-bg: #3f2b10;   /* Темно-янтарный фон для предупреждений */
+  --clr-warn-border: #f59e0b; /* Янтарная рамка (var(--accent)) */
   
-  --clr-stars: #f59e0b;
-  --clr-note-bg: #f5f3ff;
-  --clr-note-text: #5b21b6;
-  --clr-white: #ffffff;
+  --clr-stars: #fbbf24;      /* Насыщенный желтый для рейтинга */
+  --clr-note-bg: #1e293b;   /* Используем цвет поверхности для заметок */
+  --clr-note-text: #e2e8f0; /* Светлый текст */
+  --clr-white: #ffffff;     /* Чистый белый (редко) */
 
-  /* Переменные для Таблицы — "Стеклянный" минимализм */
-  --compare-bg: rgba(255, 255, 255, 0.8);
-  --compare-head-bg: #f8fafc;
-  --compare-border: #f1f5f9;
-  --compare-zebra: rgba(248, 250, 252, 0.5);
-  --compare-hover: #f1f5f9;
+  /* Переменные для Таблицы (Темная тема) */
+  --compare-bg: var(--bg-surface);
+  --compare-head-bg: #111827; /* Почти черный для заголовка */
+  --compare-border: #334155;   /* Серо-синяя рамка */
+  --compare-zebra: #243042;    /* Едва заметная "зебра" */
+  --compare-hover: #2d3e54;    /* Выделение строки при наведении */
   
   /* Ссылки и Акценты в таблице */
-  --compare-link: var(--primary);
-  --compare-link-hover: var(--accent);
-  --compare-favorite-bg: rgba(139, 92, 246, 0.05);
-  --compare-favorite-border: rgba(139, 92, 246, 0.1);
+  --compare-link: var(--primary); /* Голубой Telegram */
+  --compare-link-hover: #38bdf8; /* Более светлый голубой */
+  --compare-favorite-bg: rgba(34, 158, 217, 0.05); /* Легкая голубая подсветка */
+  --compare-favorite-border: rgba(34, 158, 217, 0.2);
   
   /* Сортировка */
-  --compare-sort-opacity: 0.3;
+  --compare-sort-opacity: 0.4;
   --compare-sort-active: var(--primary);
 
-  /* Методология — Парящие Bento-карточки */
-  --m-card-bg: var(--clr-white);
-  --m-card-border: transparent;
-  --m-card-shadow: rgba(15, 23, 42, 0.08);
+  /* Методология */
+  --m-card-bg: var(--bg-surface);
+  --m-card-border: #334155;
+  --m-card-shadow: rgba(0, 0, 0, 0.3); /* Глубокая тень */
   
-  /* Цвета тегов в критериях (Neon-Soft) */
-  --tag-crit-bg: #ffe4e6;
-  --tag-crit-text: #e11d48;
-  --tag-perf-bg: #e0e7ff;
-  --tag-perf-text: #4338ca;
-  --tag-safe-bg: #dcfce7;
-  --tag-safe-text: #15803d;
-  --tag-warn-bg: #fef3c7;
-  --tag-warn-text: #b45309;
+  /* Цвета тегов в критериях (Темная тема) */
+  --tag-crit-bg: #7f1d1d;    /* Темно-красный */
+  --tag-crit-text: #fecaca;  /* Светло-розовый */
+  --tag-perf-bg: #3730a3;    /* Темно-фиолетовый */
+  --tag-perf-text: #e0e7ff;  /* Светло-голубой */
+  --tag-safe-bg: #14532d;    /* Темно-зеленый */
+  --tag-safe-text: #b9f6ca;  /* Светло-зеленый */
+  --tag-warn-bg: #78350f;    /* Темно-коричневый */
+  --tag-warn-text: #fef3c7;  /* Светло-желтый */
 
   /* Альтернативы */
-  --alt-card-bg: var(--clr-white);
-  --alt-card-border: transparent;
-  --alt-card-hover: #f8fafc;
+  --alt-card-bg: var(--bg-surface);
+  --alt-card-border: #334155;
+  --alt-card-hover: #26334a;  /* Легкое осветление при наведении */
 
-/* Экспертный блок — Глубокий Glassmorphism */
-  --expert-bg: #e0e7ff;        /* Насыщенный темный с прозрачностью */
-  --expert-card-danger: rgba(244, 63, 94, 0.1); /* Легкий розовый оттенок для опасных зон */
-  --expert-danger-border: rgba(244, 63, 94, 0.3); /* Полупрозрачный контур */
-  --expert-danger-text: #fda4af;             /* Мягкий розовый (читабельный на темном) */
+  /* Экспертный блок */
+  --expert-bg: var(--bg-surface);
+  --expert-card-danger: #2d1a1a; /* Глубокий темно-красный */
+  --expert-danger-border: #991b1b; /* Красный */
+  --expert-danger-text: #fca5a5;  /* Розовый */
   
-  --expert-ok-text: #34d399;                 /* Яркий пастельный зеленый */
-  --expert-bad-text: #fb7185;                /* Яркий пастельный красный */
+  --expert-ok-text: #4ade80;     /* Зеленый */
+  --expert-bad-text: #f87171;    /* Красный */
   
-  --expert-btn-bg: var(--primary);           /* Насыщенный фиолетовый */
-  --expert-btn-text: #ffffff;                /* Чистый белый для контраста */
+  --expert-btn-bg: var(--accent); /* Кнопка акцентного цвета */
+  --expert-btn-text: #0f172a;    /* Темный текст на светлой кнопке */
 
   /* FAQ */
-  --faq-bg: var(--clr-white);
-  --faq-item-border: #f1f5f9;
-  --faq-item-bg-hover: #f8fafc;
+  --faq-bg: var(--bg-surface);
+  --faq-item-border: #334155;
+  --faq-item-bg-hover: #26334a;
   --faq-q-text: var(--text-main);
   --faq-a-text: var(--text-muted);
-  --faq-search-bg: #f1f5f9;
+  --faq-search-bg: #111827;      /* Темное поле поиска */
 
-  /* Отзывы — Мягкие "облака" */
-  --rev-card-bg: var(--clr-white);
-  --rev-card-border: transparent;
-  --rev-name-color: var(--text-main);
+  /* Отзывы */
+  --rev-card-bg: var(--bg-surface);
+  --rev-card-border: #334155;
+  --rev-name-color: var(--primary); /* Голубое имя */
   --rev-meta-color: var(--text-muted);
   --rev-star-color: var(--clr-stars);
-  --rev-btn-bg: #f1f5f9;
+  --rev-btn-bg: #111827;
   --rev-btn-hover: var(--primary);
 
   /* Форма отзыва */
-  --leave-bg: var(--clr-white);
-  --leave-input-bg: #f8fafc;
-  --leave-input-border: #e2e8f0;
-  --leave-side-bg: #f1f5f9;
+  --leave-bg: var(--bg-surface);
+  --leave-input-bg: #111827;
+  --leave-input-border: #334155;
+  --leave-side-bg: #111827;
   --leave-side-text: var(--text-muted);
 
   /* Футер */
-  --footer-bg: #ffffff;
-  --footer-border: #f1f5f9;
-  --footer-text: var(--text-main);
+  --footer-bg: #0b1120;       /* Почти черный фон футера */
+  --footer-border: #1e293b;
+  --footer-text: var(--text-muted);
   --footer-link-hover: var(--primary);
-  --footer-bottom-bg: #f8fafc;
+  --footer-bottom-bg: #090e1a; /* Самый темный оттенок */
 
-  /* Аккордеоны */
-  --acc-content-bg: #fafafa; 
-  --acc-content-border: #f8fafc; 
+  /* Внутренний фон для раскрывающихся списков (аккордеонов) в карточках */
+  --acc-content-bg: #111827;  /* Темный фон контента */
+  --acc-content-border: #111827; 
 }
 
 /* Базовый сброс */
